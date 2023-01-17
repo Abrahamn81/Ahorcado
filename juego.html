@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ahorcado</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Juego del ahorcado</h1>
+    </header>
+    <main>
+      <form class="escoger" action="escoger">
+        <label for="letra">ESCOGE UNA LETRA</label>
+        <input
+          type="text"
+          name="letra"
+          id="letra"
+          maxlength="1"
+          required
+          pattern="[a-zA-Z]*$"
+        />
+        <button type="submit" id="calcular">✔</button>
+      </form>
+
+      <section id="ganador"></section>
+
+      <figure>
+        <img src="/parte0png.png" alt="paso 0 del ahorcado" id="img" />
+        <p id="output"></p>
+      </figure>
+    </main>
+    <script src="/juego.js"></script>
+  </body>
+</html>
